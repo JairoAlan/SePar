@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3572398-4A8A-4086-8735-01C05BA3419B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ventas_Jairo</RootNamespace>
+    <AssemblyName>Ventas_Jairo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseSQL.cs" />
+    <Compile Include="FrmActualizarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarClientes.Designer.cs">
+      <DependentUpon>FrmActualizarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarOficinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarOficinas.Designer.cs">
+      <DependentUpon>FrmActualizarOficinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarProducto.Designer.cs">
+      <DependentUpon>FrmActualizarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizarRepresentante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarRepresentante.Designer.cs">
+      <DependentUpon>FrmActualizarRepresentante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaClientes.Designer.cs">
+      <DependentUpon>FrmAltaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaOficina.Designer.cs">
+      <DependentUpon>FrmAltaOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaRepresentante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaRepresentante.Designer.cs">
+      <DependentUpon>FrmAltaRepresentante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminar.Designer.cs">
+      <DependentUpon>FrmEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarCliente.Designer.cs">
+      <DependentUpon>FrmEliminarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarOficina.Designer.cs">
+      <DependentUpon>FrmEliminarOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarRepresentante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarRepresentante.Designer.cs">
+      <DependentUpon>FrmEliminarRepresentante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaProductos.Designer.cs">
+      <DependentUpon>FrmAltaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDescontinuarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescontinuarProd.Designer.cs">
+      <DependentUpon>frmDescontinuarProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagos.Designer.cs">
+      <DependentUpon>FrmPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpedido.Designer.cs">
+      <DependentUpon>frmpedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryProductos.Designer.cs">
+      <DependentUpon>FrmQueryProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmActualizarClientes.resx">
+      <DependentUpon>FrmActualizarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarOficinas.resx">
+      <DependentUpon>FrmActualizarOficinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarProducto.resx">
+      <DependentUpon>FrmActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarRepresentante.resx">
+      <DependentUpon>FrmActualizarRepresentante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaClientes.resx">
+      <DependentUpon>FrmAltaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaOficina.resx">
+      <DependentUpon>FrmAltaOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaRepresentante.resx">
+      <DependentUpon>FrmAltaRepresentante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminar.resx">
+      <DependentUpon>FrmEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarCliente.resx">
+      <DependentUpon>FrmEliminarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarOficina.resx">
+      <DependentUpon>FrmEliminarOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarRepresentante.resx">
+      <DependentUpon>FrmEliminarRepresentante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaProductos.resx">
+      <DependentUpon>FrmAltaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescontinuarProd.resx">
+      <DependentUpon>frmDescontinuarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagos.resx">
+      <DependentUpon>FrmPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpedido.resx">
+      <DependentUpon>frmpedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryProductos.resx">
+      <DependentUpon>FrmQueryProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
